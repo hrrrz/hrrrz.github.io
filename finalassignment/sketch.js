@@ -2,7 +2,7 @@
 
 var cards = [];
 var cardBack;
-var numCards = 78;
+var numCards = 77;
 var cardWidth = 100;
 var cardHeight = 160;
 var spacing = 5;
@@ -77,7 +77,7 @@ function draw(){
                 rotate(PI);
             }
 
-                imageMode(CENTER);
+                imageMode(CENTER); //https://p5js.org/reference/p5/imageMode/
                 image(card.img, 0, 0, card.w, card.h);
                 pop();
             } else {
@@ -204,7 +204,7 @@ function showSelectedCardInfo(){
   
         var cardTitle = document.createElement('h2');
         cardTitle.innerText = card.info.name;
-        cardBox.appendChild(cardTitle);
+        cardBox.appendChild(cardTitle); // https://www.w3schools.com/jsref/met_node_appendchild.asp
   
         var cardImage = document.createElement('img');
         cardImage.src = 'https://raw.githubusercontent.com/alnero/Zipline-data/master/Taro/img/' + card.info.fileName;
