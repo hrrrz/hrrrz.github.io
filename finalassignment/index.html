@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tarot Card</title>
+        <script src="p5.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="overlay" id="overlay"></div>
+
+        <div class="popup" id="popup">
+            Focus on your state. Choose 6 cards. Read about your emotional condition.<br><br>
+            Don't get too involved — card just shows your mood and is not a fortune teller. 
+        </div>
+
+        <div id="card-selection">
+            <script src="sketch.js"></script>
+        </div>
+
+        <script src="box.js"></script>
+
+        <div id="card-result" style="display: none;">
+            <h1>Your Cards</h1>
+            <div id="result-cards"></div>
+        </div>
+
+    </body>
+</html>
